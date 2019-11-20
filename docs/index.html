@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>王未来的生活小笔记</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Noto+Serif+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<style>
+		@font-face {
+			font-family: 'iconfont';  /* project id 1519468 */
+			src: url('//at.alicdn.com/t/font_1519468_dy99ch994hu.eot');
+			src: url('//at.alicdn.com/t/font_1519468_dy99ch994hu.eot?#iefix') format('embedded-opentype'),
+			url('//at.alicdn.com/t/font_1519468_dy99ch994hu.woff2') format('woff2'),
+			url('//at.alicdn.com/t/font_1519468_dy99ch994hu.woff') format('woff'),
+			url('//at.alicdn.com/t/font_1519468_dy99ch994hu.ttf') format('truetype'),
+			url('//at.alicdn.com/t/font_1519468_dy99ch994hu.svg#iconfont') format('svg');
+		}
+		.iconfont{
+			font-family:"iconfont" !important;
+			font-size:20px;
+			font-style:normal;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke-width: 0.1px;
+			-moz-osx-font-smoothing: grayscale;
+			color: #858585;
+		}
+		* {
+			font-family: 'Noto Serif SC',  'Noto Sans SC', serif,sans-serif;
+			background-color: #f8f5f2;
+			color: #282828;
+		}
+		body {
+			background-color: #f8f5f2;
+		}
+		.anchor span {
+			color: #282828;
+		}
+		.sidebar-toggle {
+			padding: 20px;
+			background-color: #f8f5f2;
+
+		}
+		body.close .sidebar-toggle {
+			background-color: #f8f5f2;
+		}
+		.sidebar {
+			color: #282828;
+			background-color: #f8f5f2;
+		}
+		.sidebar li {
+			font-weight: bold;
+		}
+		.sidebar ul li a {
+			color: #585858;
+		}
+		img {
+			width: 64px;
+			height: 64px;
+			border: 1px solid #f1f9f9;
+			border-radius: 50%;
+			padding: 4px;
+		}
+		.app-nav {
+			margin-top: 32px;
+		}
+		.app-nav a {
+			color: #282828;
+			font-family: 'Noto Sans SC', sans-serif;
+			font-size: 1em;
+		}
+		.markdown-section {
+			padding: 56px 56px 40px;
+		}
+		.markdown-section h1 {
+			font-size: 1.5em;
+		}
+		.markdown-section h2 {
+			font-size: 1.25em;
+		}
+		.markdown-section p {
+			text-align: justify;
+		}
+	</style>
+	<nav>
+		<a href="#"><i class="iconfont">&#xe8ab;</i></a>
+		<a href="#"><i class="iconfont">&#xe8b9;</i></a>
+		<a href="#"><i class="iconfont">&#xe8b0;</i></a>
+	</nav>
+	<div id="app"></div>
+	<script>
+		window.$docsify = {
+			logo: '/_media/me.jpeg',
+			name: '王未来的生活小笔记',
+			themeColor: '#D34177',
+			maxLevel: 4,
+			subMaxLevel: 2,
+			loadSidebar: true,
+			autoHeader: true,
+			notFoundPage: 'my404.md',
+			auto2top: true,
+			plugins: [
+				function (hook) {
+					var footer = [
+						'<hr/>',
+						'<footer>',
+						'<span><a href="http://nian.me">王未来</a> &copy;2019.</span>',
+						'</footer>'
+					].join('')
+
+					hook.afterEach(function (html) {
+						return html + footer
+					})
+				}
+			]
+		}
+	</script>
+	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<script>
+		if (typeof navigator.serviceWorker !== 'undefined') {
+			navigator.serviceWorker.register('sw.js')
+		}
+	</script>
+</body>
+
+</html>
