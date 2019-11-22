@@ -9,7 +9,7 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Noto+Serif+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Noto+Serif+SC:500,600&display=swap&subset=chinese-simplified" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
 			color: #858585;
 		}
 		* {
-			font-family: 'Noto Serif SC',  'Noto Sans SC', serif,sans-serif;
+			font-family: 'Noto Serif SC',  'Noto Sans SC', serif, sans-serif;
 			background-color: #f8f5f2;
 			color: #282828;
 		}
@@ -79,20 +79,35 @@
 		.markdown-section {
 			padding: 56px 56px 40px;
 		}
+		.markdown-section p{
+			font-size: 1em;
+		}
 		.markdown-section h1 {
 			font-size: 1.5em;
 		}
 		.markdown-section h2 {
 			font-size: 1.25em;
 		}
+		.markdown-section h3 {
+			font-size: 1.1em;
+		}
+		h3 a.anchor span {
+			color: #383838!important;
+		}
+
+		.markdown-section h4 {
+			font-size: 1em;
+		}
+		.markdown-section h5 {
+			font-size: .85em;
+		}
 		.markdown-section p {
 			text-align: justify;
 		}
 	</style>
 	<nav>
-		<a href="#"><i class="iconfont">&#xe8ab;</i></a>
-		<a href="#"><i class="iconfont">&#xe8b9;</i></a>
-		<a href="#"><i class="iconfont">&#xe8b0;</i></a>
+		<a href="http://nian.me"><i class="iconfont">&#xe8ab;</i></a>
+		<a href="http://nian.me"><i class="iconfont">&#xe8b0;</i></a>
 	</nav>
 	<div id="app"></div>
 	<script>
