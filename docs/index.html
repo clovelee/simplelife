@@ -35,20 +35,27 @@
 		* {
 			font-family: 'Noto Serif SC',  'Noto Sans SC', serif, sans-serif;
 			background-color: #f8f5f2;
-			color: #282828;
+			color: #232323;
 		}
 		body {
 			background-color: #f8f5f2;
-			font-style: 16px;
+			font-style: 1rem;
+		}
+		.app-nav{
+			display: flex;
+			flex-direction: row;
 		}
 		.app-nav.no-badge {
 			margin-right: 1rem;
 		}
 		.anchor span {
-			color: #282828;
+			color: #232323;
+		}
+		.sidebar .sidebar-nav {
+			font-size: 1.15rem;
 		}
 		.sidebar-toggle {
-			padding: 1rem;
+			padding: 0 0 24px 12px;
 			background-color: #f8f5f2;
 
 		}
@@ -56,14 +63,16 @@
 			background-color: #f8f5f2;
 		}
 		.sidebar {
-			color: #282828;
+			color: #232323;
 			background-color: #f8f5f2;
 		}
 		.sidebar li {
-			font-weight: bold;
+			font-weight: bolder;
+			font-size: 1.1rem;
 		}
 		.sidebar ul li a {
-			color: #585858;
+			color: #535353;
+			font-size: 1rem;
 		}
 		img {
 			width: 64px;
@@ -72,40 +81,46 @@
 			border-radius: 50%;
 			padding: 4px;
 		}
-		.app-nav {
-			margin-top: 40px;
-		}
+
 		.app-nav a {
-			color: #282828;
+			color: #232323;
 			font-family: 'Noto Sans SC', sans-serif;
-			font-size: 1em;
+			font-size: 1rem;
+			display: inline;
 		}
 		.markdown-section {
-			padding: 56px 2rem 40px;
+			padding: 56px 32px 40px;
 		}
 		.markdown-section p{
 			text-align: justify;
-			font-size: 1rem;
-			line-height: 1.6rem;
+			font-size: 1.2rem;
+			line-height: 2.2rem;
 		}
 		.markdown-section h1 {
 			font-size: 1.5rem;
+			font-weight: bolder;
 		}
 		.markdown-section h2 {
+			font-size: 1.35rem;
+			font-weight: 800;
+		}
+		h2 a.anchor span {
+			color: #D34177!important;
+		}
+
+		.markdown-section h3 {
 			font-size: 1.25rem;
 		}
-		.markdown-section h3 {
-			font-size: 1.1rem;
-		}
 		h3 a.anchor span {
-			color: #383838!important;
+			/* color: #636363!important; */
+			text-decoration-line: underline;
 		}
 
 		.markdown-section h4 {
-			font-size: 1rem;
+			font-size: 1.2rem;
 		}
 		.markdown-section h5 {
-			font-size: .85rem;
+			font-size: 1.1rem;
 		}
 
 	</style>
@@ -117,7 +132,7 @@
 	<script>
 		window.$docsify = {
 			logo: '/_media/me.jpeg',
-			name: '王未来的生活小笔记',
+			name: '未来生活小记',
 			themeColor: '#D34177',
 			maxLevel: 4,
 			subMaxLevel: 2,
